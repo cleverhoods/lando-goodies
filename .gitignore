@@ -4,6 +4,7 @@
 # Drupal specific exclusions
 /vendor/
 /web/core
+/web/modules/contrib
 
 # Ignore sensitive information
 /web/sites/*/settings.php
