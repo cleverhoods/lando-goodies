@@ -1,9 +1,14 @@
 recipe: drupal9
 config:
   webroot: web
+  database: mariadb
 
 tooling:
   clean:
     description: "Deleting downloaded and built resources"
     service: appserver
     cmd: bash $LANDO_MOUNT/local/scripts/clean.sh
+  install-site:
+    description: "Install website"
+    service: appserver
+    cmd: bash $LANDO_MOUNT/local/scripts/install-site.sh
