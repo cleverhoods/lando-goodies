@@ -8,7 +8,8 @@ PROJECT_ROOT="$(get_project_root)"
 cd "${PROJECT_ROOT}/web" || exit 1;
 
 log "Installing site from existing configuration."
-drush drush site:install --existing-config --yes || exit 1;
+DRUSH="${PROJECT_ROOT}/vendor/bin/drush"
+${DRUSH} site:install minimal --existing-config install_configure_form.enable_update_status_emails=NULL --yes || exit 1;
 log "Site is installed from existing configuration."
 
 log "\e[36m--------- Finished installing website ---------\e[39m"
