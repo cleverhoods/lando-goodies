@@ -7,7 +7,7 @@ log "Go to the project root."
 PROJECT_ROOT="$(get_project_root)"
 cd "${PROJECT_ROOT}" || exit 1;
 
-TODELETE=("vendor" "web/core")
+TODELETE=("vendor" "web/core" "web/modules/contrib")
 for i in "${TODELETE[@]}"
 do
   log "Deleting $i"
