@@ -12,3 +12,9 @@ tooling:
     description: "Install website"
     service: appserver
     cmd: bash $LANDO_MOUNT/local/scripts/install-site.sh
+
+services:
+  appserver:
+    overrides:
+      environment:
+        DRUSH_OPTIONS_ROOT: '/app/web'
