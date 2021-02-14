@@ -1,0 +1,10 @@
+# To activate this feature, copy this file as .lando.local.yml.
+# Further read on configuration file load order is available on:
+# https://docs.lando.dev/config/lando.html#base-file
+services:
+  appserver:
+    xdebug: true
+    overrides:
+      environment:
+        XDEBUG_MODE:
+        PHP_IDE_CONFIG: "serverName=appserver"

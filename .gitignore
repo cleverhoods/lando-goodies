@@ -1,0 +1,2 @@
+# Lando specific exclusions
+.lando.local.yml
