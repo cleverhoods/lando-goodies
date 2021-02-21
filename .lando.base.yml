@@ -35,3 +35,9 @@ services:
   cache:
     type: redis:6
     portforward: true
+
+  mailhog:
+    type: mailhog
+    portforward: true
+    hogfrom:
+      - appserver
