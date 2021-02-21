@@ -4,20 +4,34 @@ config:
   database: mariadb
 
 tooling:
+  build-site:
+    description: "Download and build site resources"
+    service: appserver
+    cmd: bash /app/local/scripts/build-site.sh
   clean:
     description: "Deleting downloaded and built resources"
     service: appserver
-    cmd: bash $LANDO_MOUNT/local/scripts/clean.sh
+    cmd: bash /app/local/scripts/clean.sh
   install-site:
     description: "Install website"
     service: appserver
-    cmd: bash $LANDO_MOUNT/local/scripts/install-site.sh
+    cmd: bash /app/local/scripts/install-site.sh
+  xdebug:
+    description: "Loading Xdebug in user defined mode."
+    service: appserver
+    cmd: bash /app/local/scripts/xdebug.sh
 
 services:
   appserver:
+    xdebug: false
+    config:
+      php: local/configs/php/xdebug.ini
     overrides:
       environment:
         DRUSH_OPTIONS_ROOT: '/app/web'
+        PHP_IDE_CONFIG: "serverName=appserver"
+        XDEBUG_MODE:
+
   cache:
     type: redis:6
     portforward: true

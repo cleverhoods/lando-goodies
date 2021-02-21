@@ -4,7 +4,3 @@
 services:
   appserver:
     xdebug: true
-    overrides:
-      environment:
-        XDEBUG_MODE:
-        PHP_IDE_CONFIG: "serverName=appserver"
