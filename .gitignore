@@ -7,7 +7,6 @@
 /web/modules/contrib
 
 # Ignore sensitive information
-/web/sites/*/settings.php
 /web/sites/*/settings.local.php
 /web/sites/*/settings.lando.php
 
