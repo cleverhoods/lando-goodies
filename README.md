@@ -10,12 +10,12 @@ Advanced Lando tooling to improve day to day work. See article: https://medium.c
 ### `lando build-app`
 Download and build application resources
 
-###`lando clean`
+### `lando clean`
 Delete downloaded and built resources
 
-###`lando install-app`
+### `lando install-app`
 Install the application
 
-###`lando xdebug`
+### `lando xdebug`
 Loading Xdebug in a user defined mode.
 
