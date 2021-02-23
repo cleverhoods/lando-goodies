@@ -26,7 +26,3 @@ log "Lando build-app is finished"
 log "Run lando install-app"
 lando install-app || exit 1;
 log "Lando install-app is finished"
-
-log "Create one time login link"
-lando drush uli || exit 1;
-log "One time log in link is created"
