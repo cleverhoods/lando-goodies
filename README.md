@@ -1,5 +1,5 @@
 # Lando goodies
-Advanced Lando tooling to improve day to day work. See article: https://medium.com/@cleverhoods/4-lando-goodies-for-productivity-d5101962a3cd
+Advanced Lando tooling to improve day to day work.
 
 ## Installation guide
 1. [Install Lando](https://docs.lando.dev/basics/installation.html) latest [release (v3.0.26)](https://github.com/lando/lando/releases/tag/v3.0.26)
