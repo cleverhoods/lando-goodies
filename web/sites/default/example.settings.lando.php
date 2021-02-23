@@ -162,7 +162,6 @@ $settings['hash_salt'] = 'EskereBeskereWithFawzyVariables';
 
 // Trusted host patterns.
 $settings['trusted_host_patterns'] = [
-  '^appserver$',
   '^.+\.lndo.site$',
 ];
 
