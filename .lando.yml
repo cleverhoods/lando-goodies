@@ -1,14 +1,14 @@
-name: lando
+name: lando-goodies
 recipe: drupal9
 config:
   webroot: web
 
 proxy:
   mailhog:
-    - "mailhog.lando.lndo.site"
+    - "mailhog.lando-goodies.lndo.site"
 
 services:
   appserver:
     overrides:
       environment:
-        DRUSH_OPTIONS_URI: "https://lando.lndo.site"
+        DRUSH_OPTIONS_URI: "https://lando-goodies.lndo.site"
