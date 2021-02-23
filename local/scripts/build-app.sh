@@ -11,4 +11,4 @@ log "Installing composer dependencies (with development dependencies)."
 composer install --no-interaction --no-progress --apcu-autoloader || exit 1;
 log "Composer packages are installed"
 
-log "\e[36m--------- Site resources are downloaded and built ---------\e[39m"
+log "\e[36m--------- Application resources are downloaded and built. ---------\e[39m"
