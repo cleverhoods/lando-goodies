@@ -5,19 +5,19 @@ config:
 
 tooling:
   build-app:
-    description: "Download and build site resources"
+    description: "Download and build application resources"
     service: appserver
     cmd: bash /app/local/scripts/build-app.sh
   clean:
-    description: "Deleting downloaded and built resources"
+    description: "Delete downloaded and built resources"
     service: appserver
     cmd: bash /app/local/scripts/clean.sh
   install-app:
-    description: "Install website"
+    description: "Install application"
     service: appserver
     cmd: bash /app/local/scripts/install-app.sh
   xdebug:
-    description: "Loading Xdebug in user defined mode."
+    description: "Loading Xdebug in a user defined mode."
     service: appserver
     cmd: bash /app/local/scripts/xdebug.sh
 
