@@ -19,6 +19,7 @@ tooling:
   xdebug:
     description: "Loading Xdebug in a user defined mode."
     service: appserver
+    user: root
     cmd: bash /app/local/scripts/xdebug.sh
 
 services:
