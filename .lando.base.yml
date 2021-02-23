@@ -7,7 +7,7 @@ tooling:
   build-site:
     description: "Download and build site resources"
     service: appserver
-    cmd: bash /app/local/scripts/build-site.sh
+    cmd: bash /app/local/scripts/build-app.sh
   clean:
     description: "Deleting downloaded and built resources"
     service: appserver
@@ -15,7 +15,7 @@ tooling:
   install-site:
     description: "Install website"
     service: appserver
-    cmd: bash /app/local/scripts/install-site.sh
+    cmd: bash /app/local/scripts/install-app.sh
   xdebug:
     description: "Loading Xdebug in user defined mode."
     service: appserver
