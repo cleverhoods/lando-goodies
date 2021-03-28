@@ -1,5 +1,6 @@
 # Lando specific exclusions
 .lando.local.yml
+.lando.base.yml
 
 # Drupal specific exclusions
 /vendor/
