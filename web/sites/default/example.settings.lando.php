@@ -177,7 +177,9 @@ $databases['default']['default'] = [
   'driver' => 'mysql',
 ];
 
-if (!\Drupal\Core\Installer\InstallerKernel::installationAttempted() && extension_loaded('redis')) {
+$is_install = \Drupal\Core\Installer\InstallerKernel::installationAttempted();
+
+if (!$is_install && extension_loaded('redis')) {
   // Manually add the classloader path, this is required for the container cache bin definition below
   // and allows to use it without the redis module being enabled.
   try {
